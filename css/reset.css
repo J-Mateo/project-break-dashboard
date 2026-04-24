@@ -1,0 +1,40 @@
+/* 1. Box sizing moderno y reseteo de márgenes */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Mejoras en la estructura del documento */
+html {
+  -webkit-text-size-adjust: none; /* Evita cambios de tamaño en Safari móvil */
+  text-size-adjust: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  font-family: system-ui, sans-serif; /* Fuente nativa rápida */
+}
+
+/* 3. Evitar problemas de imágenes y elementos multimedia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Heredar fuentes para inputs y botones */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Mejorar legibilidad en párrafos y títulos */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 6. Eliminar estilos de lista por defecto */
+ol, ul {
+  list-style: none;
+}

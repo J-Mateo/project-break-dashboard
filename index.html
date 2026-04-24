@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto para aprender rompiendo el código." />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Proyect Break</title>
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./img/favicon.png" type="image/png">
+</head>
+<body>
+ 
+<header class="header">
+  <a href="./index.html" class="logo-box" aria-label="Volver al inicio">
+   <svg width="24" height="22" viewBox="0 0 22 22" fill="none"
+    stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 18L8.5 9L13 15L16.5 12L21 18" />
+</svg>
+  </a>
+
+ <nav class="nav-icons" aria-label="Navegación principal">
+    <a href="./link.html" aria-label="Generador de links">
+      <i data-lucide="link"></i>
+    </a>
+
+    <a href="./clock.html" aria-label="Día y hora">
+      <i data-lucide="clock"></i>
+    </a>
+
+    <a href="./password.html" aria-label="Generador de contraseñas">
+      <i data-lucide="lock-keyhole-open"></i>
+    </a>
+
+    <a href="./weather.html" aria-label="El tiempo">
+      <i data-lucide="cloud-sun"></i>
+    </a>
+  </nav>
+</header>
+<main class="dashboard-grid">
+    <section id="links" class="glass-card"></section>
+    <section id="clock"></section>
+    <section id="password" class="glass-card">...</section>
+    <section id="weather" class="glass-card">...</section>
+</main>
+<footer>
+
+</footer>
+
+<script type="module" src="./js/background.js"></script>
+<script type="module" src="./js/clock.js"></script>
+<script type="module" src="./js/weather.js"></script>
+<script type="module" src="./js/password.js"></script>
+<script type="module" src="./js/links.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script> 
+lucide.createIcons(); 
+</script>
+</body>
+</html

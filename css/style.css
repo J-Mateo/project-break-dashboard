@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+
+body {   
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 1s ease;
+    
+ }
+
+.header {
+  position: relative;
+  z-index: 10;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+
+  transition: 0.25s ease;
+}
+
+.logo-box:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.2);
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 11px 18px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.nav-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  opacity: 0.85;
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.nav-icons a:hover {
+  opacity: 1;
+  transform: scale(1.16);
+}
+
+.nav-icons svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.8;
+}
+
+.glass-card {
+    max-width: 350px; 
+    min-height: 200px; 
+    padding: 1.5rem;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.3s ease; ;
+}
+
+.dashboard-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr 1fr;
+gap: 40px;
+justify-items: center;
+padding: 40px;
+min-height: calc(100vh - 96px);
+}
+section {
+  /* Esto hará que las cajas no se estiren de arriba a abajo y dejen ver el paisaje */
+  align-self: start; 
+  /* Y esto las separa un poco más */
+  margin-top: 5vh; 
+}
