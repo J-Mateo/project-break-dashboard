@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto para aprender rompiendo el código." />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./img/favicon.png" type="image/png">
+
+  <title>Proyect Break | Tiempo</title>
+</head>
+<body>
+  <header id="header" class="header"></header>
+
+  <main class="weather-page">
+  <section id="weather" class="weather-section weather-card">
+    <div class="weather-container">
+
+      <div class="weather-current">
+        <div id="weather-location"></div>
+        <div id="weather-status"></div>
+        
+
+        <div class="weather-temp-row">
+          <img id="weather-icon" alt="">
+          <div id="weather-temp"></div>
+
+          <div class="weather-details">
+            <div id="weather-rain"></div>
+            <div id="weather-humidity"></div>
+            <div id="weather-wind"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="weather-hours" class="weather-hours"></div>
+
+    </div>
+  </section>
+</main>
+
+  <script src="https://unpkg.com/lucide@0.378.0"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/weather.js"></script>
+  <script type="module" src="./js/background.js"></script>
+</body>
+</html>
