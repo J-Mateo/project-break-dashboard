@@ -7,15 +7,26 @@ function getRandomChar(chars) {
   const randomIndex = Math.floor(Math.random() * chars.length);
   return chars[randomIndex];
 }
+
 function shuffleString(str) {
   return str
     .split('')
     .sort(() => Math.random() - 0.5)
     .join('');
 }
+
 generateBtn.addEventListener('click', () => {
   lockIcon.setAttribute("data-lucide", "lock-keyhole");
   lucide.createIcons();
+
+  const currentLockIcon = document.getElementById("lockIcon");
+
+  currentLockIcon.classList.add("lock-active");
+  currentLockIcon.classList.add("lock-animate");
+
+  setTimeout(() => {
+    currentLockIcon.classList.remove("lock-animate");
+  }, 200);
 
   const passwordLength = Number(inputLength.value);
 
@@ -41,7 +52,8 @@ generateBtn.addEventListener('click', () => {
   while (password.length < passwordLength) {
     password += getRandomChar(allChars);
   }
+
   password = shuffleString(password);
   passwordResult.textContent = password;
-
+  passwordResult.classList.add("show");
 });
