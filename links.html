@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto para aprender rompiendo el código." />
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./img/favicon.png" type="image/png">
+
+  <title>Proyect Break | Listado de links</title>
+</head>
+
+<body>
+  <header id="header" class="header"></header>
+ <main class="links-page">
+  <section class="links-card">
+    <div class="links-title">
+      <h1>Añade tus enlaces favoritos</h1>
+      <i data-lucide="link"></i>
+    </div>
+
+    <form id="linksForm" class="links-form">
+      <label for="linkName">Nombre del enlace</label>
+      <input type="text" id="linkName" placeholder="GitHub">
+
+      <label for="linkUrl">URL del enlace</label>
+      <input type="url" id="linkUrl" placeholder="https://github.com">
+
+      <button type="submit" class="save-link-btn">
+        Añadir enlace
+      </button>
+    </form>
+
+    <div id="linksList" class="links-list"></div>
+  </section>
+</main> 
+
+  <footer></footer>
+
+  <script src="https://unpkg.com/lucide@0.378.0"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/links.js"></script>
+  <script type="module" src="./js/background.js"></script>
+</body>
+</html>

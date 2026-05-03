@@ -110,7 +110,7 @@ body {
   height: 170px;
   padding: 20px;
 
-  background: var(--glass-bg-dark); /* 👈 unificas aquí */
+  background: var(--glass-bg-dark); 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(6px);
 
