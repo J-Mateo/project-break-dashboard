@@ -14,15 +14,18 @@
   --accent-blue: #6fd3ff;
   --accent-blue-strong: #4f8cff;
 }
-
+html {
+  background-color: #1f2433;
+}
 body {   
-    background-color: #000;
+    background-image: url("https://res.cloudinary.com/j-mateo/image/upload/c_fill,g_center,w_1920,h_1080,f_auto,q_auto/jonatan-pie-EvKBHBGgaUo-unsplash_st1abt");
+    background-color: #1f2433;
     font-family: 'Inter', sans-serif;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    transition: all 1s ease;
+    transition: background-image 1s ease;
     
  }
 
@@ -578,3 +581,6 @@ min-height: calc(100vh - 96px);
   stroke: var(--accent-blue);
 }
 
+/* =========================
+  PASSWORD LINKS
+========================= */
