@@ -39,9 +39,6 @@ function updateClock() {
   messageElement.textContent = getMessage(hours);
 }
 
-// console.log(`Día: ${dateString}`);
-// console.log(`Hora actual: ${timeString}`);
-
   document.getElementById('time').textContent = timeString;
   document.getElementById('date').textContent = dateString;
   
