@@ -7,6 +7,9 @@ const statusEl = document.getElementById("weather-status");
 const iconEl = document.getElementById("weather-icon");
 const tempEl = document.getElementById("weather-temp");
 
+// Elementos opcionales: este mismo script se reutiliza en index.html y weather.html.
+// Por eso comprobamos si existen antes de modificar su contenido.
+
 const rainEl = document.getElementById("weather-rain");
 const humidityEl = document.getElementById("weather-humidity");
 const windEl = document.getElementById("weather-wind");

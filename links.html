@@ -25,17 +25,17 @@
 
     <form id="linksForm" class="links-form">
       <label for="linkName">Nombre del enlace</label>
-      <input type="text" id="linkName" placeholder="GitHub">
+      <input type="text" id="linkName" placeholder="GitHub" required>
 
       <label for="linkUrl">URL del enlace</label>
-      <input type="url" id="linkUrl" placeholder="https://github.com">
+      <input type="url" id="linkUrl" placeholder="https://github.com" required>
 
       <button type="submit" id="saveLinkBtn" class="save-link-btn">
         Añadir enlace
       </button>
     </form>
 
-    <div id="linksList" class="links-list"></div>
+    <ul id="linksList" class="links-list"></ul>
   </section>
 </main> 
 

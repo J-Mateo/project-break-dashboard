@@ -10,10 +10,10 @@ const getMessage = (hours) => {
     return "Último empujón antes del break.";
   } else if (hours >= 14 && hours < 16) {
     return "Volviendo al código… poco a poco.";
-  } else if (hours > 16 && hours <= 18) {
+  } else if (hours >= 16 && hours <= 18) {
     return "Sigue, vas bien. Últimos avances.";
   } else if (hours > 18 && hours <= 22) {
-    return "Último push del día.¡Ánimo!";
+    return "Último push del día. ¡Ánimo!";
   } else {
     return "Cierra el código. Es hora de desconectar.";
   }

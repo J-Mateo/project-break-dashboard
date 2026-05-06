@@ -56,8 +56,8 @@
   <section id="clock" class="clock-section page-inicio">
     <a href="./clock.html" class="enlace-page">
       <div class="clock-container">
-        <div id="time" class="time"></div>
-        <div id="date" class="date"></div>
+        <div id="time" class="time" aria-live="polite"></div>
+        <div id="date" class="date" aria-live="polite"></div>
       </div>
     </a>
   </section>
@@ -76,7 +76,7 @@
     <div class="card-content weather-mini">
 
       <div class="weather-mini-condition">
-        <img id="weather-icon" class="weather-mini-icon" alt="">
+        <img id="weather-icon" class="weather-mini-icon" alt="Icono del tiempo actual">
         <div id="weather-status" class="weather-mini-status"></div>
       </div>
 
@@ -89,9 +89,6 @@
 </section>
 
 </main>
-<footer>
-
-</footer>
 
 <script type="module" src="./js/background.js"></script>
 <script type="module" src="./js/clock.js"></script>

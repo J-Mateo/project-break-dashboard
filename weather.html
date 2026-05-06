@@ -19,28 +19,26 @@
   <section id="weather" class="weather-section weather-page-card">
     <div class="weather-container">
 
-      <div class="weather-current">
-        <div id="weather-location"></div>
-        <div id="weather-status"></div>
-        
+    <div class="weather-current">
+    <div id="weather-location" aria-live="polite"></div>
+    <div id="weather-status" aria-live="polite" role="status"></div>></div>
 
-        <div class="weather-temp-row">
-          <img id="weather-icon" alt="">
-          <div id="weather-temp"></div>
+    <div class="weather-temp-row">
+    <img id="weather-icon" alt="Icono del tiempo actual">
+    <div id="weather-temp" aria-live="polite"></div>
 
-          <div class="weather-details">
-            <div id="weather-rain"></div>
-            <div id="weather-humidity"></div>
-            <div id="weather-wind"></div>
-          </div>
-        </div>
-      </div>
+    <div class="weather-details">
+      <div id="weather-rain" aria-live="polite"></div>
+      <div id="weather-humidity" aria-live="polite"></div>
+      <div id="weather-wind" aria-live="polite"></div>
+    </div>
+    </div>
 
-      <div id="weather-hours" class="weather-hours"></div>
+    <div id="weather-hours" class="weather-hours" aria-live="polite"></div>
 
     </div>
   </section>
-</main>
+  </main>
 
   <script src="https://unpkg.com/lucide@0.378.0"></script>
   <script type="module" src="./js/main.js"></script>

@@ -62,6 +62,14 @@ https://j-mateo.github.io/project-break-dashboard/
 - Animaciones suaves
 - Jerarquía visual clara
 
+## Mejoras de accesibilidad
+
+- Uso de `aria-live` en elementos que se actualizan dinámicamente.
+- Uso de `role="status"` para mensajes de estado.
+- Textos `alt` descriptivos en iconos meteorológicos.
+- Estados `focus` visibles para navegación con teclado.
+- Uso semántico de listas en el gestor de enlaces.
+
 ## Responsive
 
 La interfaz está adaptada para ofrecer una visualización correcta en escritorio, tablet y dispositivos móviles.

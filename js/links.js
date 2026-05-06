@@ -24,6 +24,7 @@ function createLinkItem(name, url) {
 
   linkElement.href = url;
   linkElement.target = "_blank";
+  linkElement.rel = "noopener noreferrer";
   linkElement.textContent = name;
 
   deleteButton.textContent = 'X';
