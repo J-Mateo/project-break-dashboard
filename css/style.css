@@ -757,3 +757,101 @@ min-height: calc(100vh - 96px);
   font-size: 0.95rem;
   opacity: 0.85;
 }
+/* =========================
+  RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  #clock {
+    order: -1;
+  }
+  .page-inicio .clock-container {
+    margin-bottom: 10px;
+  }
+ .clock-page {
+    padding: 20px;
+    align-items: center;
+  }
+  .header {
+    padding: 16px 20px;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+
+  .dashboard-grid section {
+    margin-top: 0;
+  }
+  .glass-card {
+    max-width: 100%;
+    padding: 14px;
+    min-height: 130px;
+  }
+  .links-page {
+    padding: 40px 20px 30px;
+    align-items: center;
+  }
+  .links-page-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.6rem;
+}
+.main {
+  padding: 40px 20px 30px;
+  align-items: center;
+}
+
+.pass {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+
+  width: 100%;
+  max-width: 420px;
+  padding: 1.8rem;
+}
+
+.pass .title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pass .title h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.pass .title i {
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+.password-form {
+  width: 100%;
+}
+
+.password-form input,
+.generate-btn {
+  width: 100%;
+}
+.weather-page {
+  padding: 40px 20px 30px;
+  align-items: center;
+}
+
+.weather-page-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 1.4rem;
+}
+
+.weather-page-card .weather-hours {
+  overflow-x: auto;
+}
+}
