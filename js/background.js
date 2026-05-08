@@ -8,15 +8,12 @@ const changeBackground = () => {
   const publicId = photos[randomKey];
   const finalUrl = `${CLOUDINARY.base}/${CLOUDINARY.transforms}/${publicId}.jpg`;
   
-  // PRECARGA: Creamos una imagen invisible en memoria
+  // Precarga la imagen antes de aplicarla al fondo para evitar parpadeos.
   const imgPreload = new Image();
   imgPreload.src = finalUrl;
   
-  // Cuando la imagen invisible se haya descargado COMPLETAMENTE...
   imgPreload.onload = () => {
-    // ...entonces la aplicamos al body. ¡Sin parpadeos!
     body.style.backgroundImage = `url('${finalUrl}')`;
-    // console.log("Cambiado a:", randomKey);
   };
 };
 

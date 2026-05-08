@@ -452,15 +452,15 @@ min-height: calc(100vh - 96px);
 }
 
 .password-card-content i {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   color: var(--accent-blue);
   opacity: 0.8;
 }
 
 .password-card-content h3 {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--accent-blue);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
@@ -468,7 +468,8 @@ min-height: calc(100vh - 96px);
 
 .password-card-content p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1.35;
   opacity: 0.85;
 }
 
@@ -695,7 +696,9 @@ input {
   font-family: inherit;
 }
 
-input:focus {
+input:focus,
+button:focus-visible,
+a:focus-visible {
   outline: 2px solid var(--accent-blue);
   outline-offset: 2px;
 }
@@ -716,15 +719,15 @@ input:focus {
 }
 
 .links-card-content i {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   color: var(--accent-blue);
   opacity: 0.8;
 }
 
 .links-card-content h3 {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--accent-blue);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
@@ -732,7 +735,8 @@ input:focus {
 
 .links-card-content p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1.35;
   opacity: 0.85;
 }
 .clock-page,
@@ -785,7 +789,7 @@ input:focus {
   min-height: 140px;
   padding: 20px;
 }
-}
+
   .links-page {
     padding: 40px 20px 30px;
     align-items: center;

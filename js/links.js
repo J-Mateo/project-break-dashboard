@@ -1,7 +1,6 @@
 const linksForm = document.getElementById('linksForm');
 const linkName = document.getElementById('linkName');
-const linkUrl = document.getElementById('linkUrl')
-const saveLinkBtn = document.getElementById('saveLinkBtn');
+const linkUrl = document.getElementById('linkUrl');
 const linksList = document.getElementById('linksList');
 
 const allLinks = JSON.parse(localStorage.getItem('links')) || [];
