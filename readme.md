@@ -76,6 +76,7 @@ La interfaz está adaptada para ofrecer una visualización correcta en escritori
 
 ## Estructura del proyecto
 
+```text
 project-break-dashboard/
 │── css/
 │   ├── reset.css
